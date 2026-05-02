@@ -1,0 +1,44 @@
+## --- PYTHON CORE ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+env/
+*.log
+
+# Aider logs and metadata
+.aider.chat.history.md
+.aider.input.history
+.aider.tags.cache* # Catch all versions (v3, v4, etc.)
+
+# Keep your architectural rules and settings
+!.aider.conf.yml
+!.aider.conventions.md
+
+
+# If you use Logfire/Pydantic-AI tracing logs locally
+.logfire/
+
+## --- DATABASE (mysqlclient) ---
+# Ignore local connection scripts or temporary dumps
+local_db_config.py
+*.sql
+*.mysql
+
+## --- FASTAPI & TOOLING ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# VS Code local settings
+.vscode/
+!.vscode/settings.json
+
+## --- OS JUNK ---
+.DS_Store
+Thumbs.db
+.aider*
+
+## ---- DUMP / TEST FILES / OLDER CONFIGS --
+dumps/
